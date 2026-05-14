@@ -3,7 +3,12 @@ import pandas as pd
 import sqlite3
 import plotly.express as px
 
-st.set_page_config(page_title="Dashboard Potensi Desa Gianyar", layout="wide")
+# Konfigurasi Halaman - layout="wide" agar lega di desktop, tapi tetap adaptif di HP
+st.set_page_config(
+    page_title="Dashboard Potensi Desa Gianyar",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 
 def get_db_connection():
@@ -45,12 +50,7 @@ def load_data(tahun="Semua", kecamatan="Semua", kategori="Semua"):
     return df
 
 
-st.title("Dashboard Potensi Desa Kabupaten Gianyar")
-
-# --- NAVBAR / HORIZONTAL FILTER ---
-st.markdown("### Filter Data")
-nav1, nav2, nav3 = st.columns(3)
-
+# --- AMBIL DATA UNTUK FILTER ---
 conn = get_db_connection()
 list_kecamatan = ["Semua"] + [
     r[0] for r in conn.execute("SELECT nama_kecamatan FROM KECAMATAN").fetchall()
@@ -63,18 +63,28 @@ list_kategori = ["Semua"] + [
 ]
 conn.close()
 
-with nav1:
+
+# --- SIDEBAR: FILTER DATA ---
+with st.sidebar:
+    # Optional: Tambahkan logo jika ada
+
+    st.header("Filter Data")
+
     selected_tahun = st.selectbox("Pilih Tahun", ["Semua", 2021, 2022, 2023])
-with nav2:
     selected_kec = st.selectbox("Pilih Kecamatan", list_kecamatan)
-with nav3:
     selected_kat = st.selectbox("Pilih Kategori Potensi", list_kategori)
 
-st.markdown("---")
+    st.markdown("---")
+    st.caption("Dashboard Potensi Desa © 2026")
+
 
 # Load data berdasarkan filter
 df_final = load_data(selected_tahun, selected_kec, selected_kat)
 
+
+# --- MAIN CONTENT ---
+st.title(" Dashboard Potensi Desa Kabupaten Gianyar")
+st.markdown("---")
 
 # --- 3 KARTU RINGKASAN ---
 st.markdown("### Ringkasan Data")
@@ -84,7 +94,7 @@ if not df_final.empty:
     total_desa = len(df_final)
     jumlah_kategori = df_final["Kategori"].nunique()
 
-    # Mencari kategori dominan (persentase terbesar) untuk ditampilkan di Card 3
+    # Mencari kategori dominan (persentase terbesar)
     kategori_terbanyak = df_final["Kategori"].value_counts().index[0]
     persentase_terbanyak = (
         df_final["Kategori"].value_counts().iloc[0] / total_desa
@@ -104,36 +114,24 @@ with card3:
 
 st.markdown("---")
 
-# --- TABEL DATA ---
-st.subheader("Tabel Detail Data dan Hasil Clustering")
-search = st.text_input("Cari Nama Desa...")
 
-if search:
-    df_display = df_final[df_final["Desa"].str.contains(search, case=False)].copy()
-else:
-    df_display = df_final.copy()
-
-if not df_display.empty:
-    df_display.index = range(1, len(df_display) + 1)
-
-st.dataframe(df_display, use_container_width=True)
-
-# --- GRAFIK (Ukuran Besar & Full Width) ---
+# --- GRAFIK (Responsive View - Satu Baris Masing-Masing) ---
 if not df_final.empty:
-    # 1. Pie Chart
-    st.subheader("Persentase Kategori Potensi Desa")
-    fig_pie = px.pie(df_final, names="Kategori")
-    fig_pie.update_layout(height=450)  # Memperbesar tinggi grafik
+    # 1. Grafik Donut (Pie Chart)
+    st.subheader("Persentase Kategori Potensi")
+    fig_pie = px.pie(df_final, names="Kategori", hole=0.3)
+
+    # Menyesuaikan margin dan memindah legenda ke bawah agar bersahabat di layar HP
+    fig_pie.update_layout(
+        height=500,  # Dibuat sedikit lebih tinggi agar proporsional saat full width
+        margin=dict(t=20, b=20, l=20, r=20),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5),
+    )
     st.plotly_chart(fig_pie, use_container_width=True)
 
-    # Penjelasan di bawah grafik pie
-    st.info(
-        "💡 **Penjelasan Grafik:** Pie chart di atas menunjukkan persentase distribusi desa berdasarkan kategori potensinya. Ini membantu Anda melihat porsi kategori mana yang paling mendominasi di Kabupaten Gianyar (atau di area yang sedang Anda filter)."
-    )
+    st.markdown("<br>", unsafe_allow_html=True)  # Jarak antar grafik
 
-    st.markdown("<br>", unsafe_allow_html=True)  # Jarak kosong
-
-    # 2. Bar Chart
+    # 2. Grafik Batang (Bar Chart)
     st.subheader("Sebaran Kategori Potensi per Kecamatan")
     df_bar = (
         df_final.groupby(["Kecamatan", "Kategori"]).size().reset_index(name="Jumlah")
@@ -146,32 +144,49 @@ if not df_final.empty:
         barmode="group",
         text_auto=True,
     )
-    fig_bar.update_layout(height=500)  # Memperbesar tinggi grafik
+
+    # Menyesuaikan margin dan memindah legenda ke bawah agar tidak memakan ruang chart
+    fig_bar.update_layout(
+        height=800,
+        margin=dict(t=20, b=20, l=20, r=20),
+        legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5),
+        xaxis_title=None,
+    )
     st.plotly_chart(fig_bar, use_container_width=True)
 
-    # Penjelasan di bawah grafik bar
-    st.info(
-        "💡 **Penjelasan Grafik:** Grafik batang di atas membandingkan jumlah desa per kategori potensi di masing-masing kecamatan. Anda bisa menggunakannya untuk membandingkan kecamatan mana yang memiliki desa paling maju atau tertinggal."
-    )
 
-# --- BAGIAN CETAK LAPORAN (Tambahkan di bagian paling bawah sebelum st.markdown("---")) ---
+st.markdown("---")
+
+
+# --- TABEL DATA ---
+st.subheader("Tabel Detail Data & Hasil Clustering")
+search = st.text_input("Cari Nama Desa...", placeholder="Ketik nama desa...")
+
+if search:
+    df_display = df_final[df_final["Desa"].str.contains(search, case=False)].copy()
+else:
+    df_display = df_final.copy()
+
+if not df_display.empty:
+    df_display.index = range(1, len(df_display) + 1)
+
+# Tabel akan otomatis ada scroll-bar horizontal di HP
+st.dataframe(df_display, use_container_width=True)
+st.markdown("---")
+
 
 # --- BAGIAN CETAK LAPORAN ---
+st.subheader("🖨️ Unduh Laporan")
+st.write("Unduh data hasil filter atau laporan analisis lengkap di bawah ini.")
 
-st.subheader("🖨️ Cetak Laporan")
-st.write("Unduh data hasil filter atau laporan analisis lengkap.")
+# Tombol download diubah menjadi kolom agar rapi di desktop dan bertumpuk di HP
+col_btn1, col_btn2 = st.columns(2)
 
-# Layout kolom untuk tombol agar terlihat rapi
-col1, col2 = st.columns(2)
-
-with col1:
+with col_btn1:
     if not df_final.empty:
-        # Mengubah dataframe ke CSV
         csv = df_final.to_csv(index=False).encode("utf-8")
-
-        # Membuat tombol download CSV
         st.download_button(
-            label="📥 Download Data Filter (CSV)",
+            label="Download Data Filter (CSV)",
             data=csv,
             file_name=f"Laporan_Potensi_Desa_{selected_kec}_{selected_tahun}.csv",
             mime="text/csv",
@@ -180,17 +195,14 @@ with col1:
     else:
         st.warning("Tidak ada data filter untuk diunduh.")
 
-with col2:
-    # Path ke file PDF
+with col_btn2:
     pdf_path = "data/laporan.pdf"
-
     try:
         with open(pdf_path, "rb") as f:
             pdf_data = f.read()
 
-        # Membuat tombol download PDF
         st.download_button(
-            label="📄 Download Laporan Analisis (PDF)",
+            label="Download Laporan Analisis (PDF)",
             data=pdf_data,
             file_name="laporan_analisis_potensi_desa.pdf",
             mime="application/pdf",
@@ -198,5 +210,3 @@ with col2:
         )
     except FileNotFoundError:
         st.error("File laporan.pdf tidak ditemukan di folder data.")
-
-st.markdown("---")
