@@ -77,9 +77,9 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption("Dashboard Potensi Desa © 2026")
-    # process = psutil.Process(os.getpid())
-    # mem_mb = process.memory_info().rss / (1024 * 1024)
-    # st.caption(f"🧠 Memori saat ini: {mem_mb:.1f} MB")
+    process = psutil.Process(os.getpid())
+    mem_mb = process.memory_info().rss / (1024 * 1024)
+    st.caption(f"🧠 Memori saat ini: {mem_mb:.1f} MB")
 
 
 # Load data berdasarkan filter
