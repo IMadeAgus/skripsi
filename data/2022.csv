@@ -1,71 +1,71 @@
-Kecamatan,Desa,Kepadatan Penduduk,Hotel,Penginapan,Menara BTS,Bank Pemerintah,Bank Swasta,BPR,KUD,Kopinkra,Kospin,Koperasi Lainnya,Kelompok Pertokoan,Pasar Bangunan Permanen,Pasar Bangunan Semi Permanen,Pasar Tanpa Bangunan,Mini Market,Restoran,Tahun,Cluster,Kategori
-Blahbatuh,Saba,1499.0,0,28,3,0,0,5,0,0,6,3,0,0,0,0,5,5,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Pering,1446.0,0,6,4,0,0,6,0,0,1,5,0,0,0,0,4,1,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Keramas,2018.0,3,10,4,1,0,1,0,0,7,6,1,1,0,0,9,4,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Medahan,1558.0,1,10,2,0,0,1,0,0,2,3,0,1,0,0,6,6,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Bona,2113.0,0,3,3,0,0,1,0,0,2,9,1,1,0,0,1,0,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Belega,2124.0,0,0,1,0,0,2,0,0,1,8,0,0,0,0,5,1,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Blahbatuh,2278.0,0,4,4,1,1,7,1,0,5,12,1,2,0,1,8,3,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Buruan,1652.0,0,0,1,0,0,14,0,0,17,0,0,0,0,0,6,2,2022,0,Cluster Desa Perlu Dibantu
-Blahbatuh,Bedulu,2470.0,0,10,2,1,0,6,0,0,4,11,1,2,0,2,8,6,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Lebih,3737.0,1,1,3,1,0,2,0,0,12,1,0,1,1,0,5,3,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Tulikup,1616.0,1,1,6,0,0,2,0,0,12,1,1,1,0,0,6,3,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Temesi,1303.0,0,0,1,0,0,1,1,0,5,3,0,0,0,0,5,2,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Sidan,2560.0,0,0,4,0,0,1,0,0,1,7,0,0,2,0,2,2,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Samplangan,2122.0,0,6,2,0,0,4,0,0,5,2,0,1,0,0,6,1,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Serongga,3029.0,1,0,3,0,0,1,0,0,0,5,0,0,1,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Abianbase,1556.0,1,0,3,0,0,2,0,0,1,4,1,0,2,0,3,5,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Gianyar,7015.0,1,5,10,10,6,5,0,0,33,10,6,1,1,1,18,7,2022,1,Cluster Desa Maju 
-Gianyar,Beng,2048.0,0,0,1,0,0,1,0,0,1,8,1,0,2,0,9,1,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Bitera,3096.0,1,0,2,1,0,4,1,0,4,7,0,1,0,0,1,4,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Bakbakan,1245.0,0,3,2,0,0,2,0,0,8,6,0,0,0,0,1,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Siangan,1807.0,0,7,3,0,0,5,0,0,5,6,0,0,1,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Suwat,858.0,0,0,0,0,0,2,0,0,2,4,0,0,1,0,1,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Petak,1263.0,1,2,1,0,0,5,0,0,2,2,0,0,0,0,0,1,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Petak Kaja,1259.0,0,0,2,0,0,3,0,0,4,1,0,0,1,0,3,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Sumita,1648.0,0,0,1,0,0,1,0,0,1,7,0,0,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Gianyar,Tegal Tugu,3473.0,0,0,2,0,0,1,0,0,5,2,0,0,0,0,1,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Melinggih Kelod,960.0,4,8,2,1,0,4,0,0,1,8,0,0,0,0,2,2,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Melinggih,1533.0,0,2,3,4,0,6,1,0,1,3,5,1,1,2,5,1,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Kelusa,736.0,1,12,2,0,0,3,0,0,11,0,0,0,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Beresela,937.0,1,7,1,0,0,1,0,0,0,5,0,0,0,0,2,3,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Bukian,819.0,0,1,1,0,0,8,0,0,14,3,0,0,0,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Puhu,436.0,4,0,2,0,0,6,0,0,6,1,0,1,0,0,3,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Buahan,401.0,3,1,1,0,0,5,0,0,0,8,0,1,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Buahan Kaja,413.0,0,3,1,0,0,8,0,0,0,2,0,1,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Payangan,Kerta,390.0,0,4,3,0,0,8,0,0,3,2,0,1,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Batubulan,3367.0,0,6,12,4,1,14,0,0,5,37,4,7,0,2,29,40,2022,1,Cluster Desa Maju 
-Sukawati,Batubulan Kangin,2810.0,0,0,3,0,0,2,0,0,2,10,0,2,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Ketewel,1686.0,0,10,6,2,0,3,0,0,2,18,0,1,1,0,9,4,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Guwang,1441.0,0,1,2,0,0,1,0,1,1,10,1,2,0,0,4,3,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Sukawati,1748.0,0,10,4,6,1,9,1,0,3,19,3,5,0,2,5,27,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Celuk,1485.0,0,3,3,0,0,4,0,0,2,6,0,2,0,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Singapadu,1665.0,0,3,4,3,0,4,0,0,3,8,1,1,0,0,8,3,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Singapadu Tengah,671.0,0,13,3,0,0,5,0,0,3,9,0,1,0,0,11,2,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Singapadu Kaler,1897.0,0,5,4,1,0,3,0,0,4,8,0,1,0,0,9,7,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Batuan,2170.0,0,14,2,0,0,4,0,0,3,24,2,1,0,0,2,3,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Batuan Kaler,1701.0,0,2,1,1,0,1,0,0,7,4,0,0,0,0,5,5,2022,0,Cluster Desa Perlu Dibantu
-Sukawati,Kemenuh,1370.0,2,92,3,0,0,7,0,0,5,15,3,1,0,0,5,9,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Tampaksiring,Pejeng Kawan,1464.0,0,29,1,0,0,1,0,0,0,7,0,0,0,0,0,0,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Pejeng,2131.0,0,11,2,1,0,3,1,0,8,6,3,2,0,1,7,4,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Pejeng Kelod,1320.0,0,6,4,0,0,5,0,0,1,3,0,1,0,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Pejeng Kangin,1437.0,1,8,4,0,0,5,0,0,0,8,0,0,0,0,3,0,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Pejeng Kaja,1482.0,2,9,4,0,0,4,0,0,3,10,0,1,0,0,2,0,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Sanding,1031.0,0,4,1,0,0,1,0,0,2,7,1,0,1,0,3,1,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Tampaksiring,1314.0,2,3,4,4,0,7,0,0,0,13,5,1,0,1,13,6,2022,0,Cluster Desa Perlu Dibantu
-Tampaksiring,Manukaya,833.0,0,0,5,0,0,10,0,0,4,13,2,1,0,0,4,5,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Keliki,1052.16,10,71,1,0,0,2,0,0,12,10,0,0,0,0,0,8,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Tegallalang,1946.41,4,12,6,2,0,8,0,0,7,11,7,2,1,1,2,12,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Kenderan,852.77,3,30,3,0,0,3,0,0,10,4,0,0,0,0,15,2,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Kedisan,1953.42,0,13,2,0,0,5,0,0,9,7,0,0,0,0,1,6,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Pupuan,837.66,1,5,0,0,0,7,0,0,7,6,0,0,0,0,1,1,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Sebatu,625.66,3,16,4,0,0,9,0,0,19,9,3,1,0,0,4,5,2022,0,Cluster Desa Perlu Dibantu
-Tegallalang,Taro,760.61,0,4,1,0,0,12,0,0,4,14,0,1,0,0,6,6,2022,0,Cluster Desa Perlu Dibantu
-Ubud,Singakerta,1519.56,10,17,5,0,0,6,0,0,1,15,0,2,0,2,10,3,2022,0,Cluster Desa Perlu Dibantu
-Ubud,Lodtunduh,1250.72,5,9,3,0,0,4,0,0,5,11,0,0,0,1,4,4,2022,0,Cluster Desa Perlu Dibantu
-Ubud,Mas,2700.0,15,99,5,1,0,6,0,0,7,15,1,2,0,1,11,37,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Ubud,Peliatan,1736.31,4,99,9,2,4,5,0,0,6,12,2,1,0,1,17,20,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Ubud,Petulu,2248.5,6,99,1,1,4,4,0,0,3,7,1,0,0,0,6,14,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Ubud,Ubud,1634.84,29,99,8,2,2,6,1,0,5,14,21,1,0,0,33,99,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Ubud,Sayan,1397.23,11,99,5,1,0,2,0,0,2,12,1,2,0,2,8,20,2022,2,Cluster Desa Potensial sebagai Pusat Pertumbuhan Ekonomi Baru
-Ubud,Kedewatan,1576.09,12,33,3,1,0,6,0,0,7,7,5,0,1,1,8,22,2022,0,Cluster Desa Perlu Dibantu
+Kecamatan,Desa,Kepadatan Penduduk,Hotel,Penginapan,Menara BTS,Bank Pemerintah,Bank Swasta,BPR,KUD,Kopinkra,Kospin,Koperasi Lainnya,Kelompok Pertokoan,Pasar Bangunan Permanen,Pasar Bangunan Semi Permanen,Pasar Tanpa Bangunan,Mini Market,Restoran,Tahun,Cluster,Label
+Blahbatuh,Saba,1499.0,0,28,3,0,0,5,0,0,6,3,0,0,0,0,5,5,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Blahbatuh,Pering,1446.0,0,6,4,0,0,6,0,0,1,5,0,0,0,0,4,1,2022,2,Desa Tertinggal
+Blahbatuh,Keramas,2018.0,3,10,4,1,0,1,0,0,7,6,1,1,0,0,9,4,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Blahbatuh,Medahan,1558.0,1,10,2,0,0,1,0,0,2,3,0,1,0,0,6,6,2022,2,Desa Tertinggal
+Blahbatuh,Bona,2113.0,0,3,3,0,0,1,0,0,2,9,1,1,0,0,1,0,2022,2,Desa Tertinggal
+Blahbatuh,Belega,2124.0,0,0,1,0,0,2,0,0,1,8,0,0,0,0,5,1,2022,2,Desa Tertinggal
+Blahbatuh,Blahbatuh,2278.0,0,4,4,1,1,7,1,0,5,12,1,2,0,1,8,3,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Blahbatuh,Buruan,1652.0,0,0,1,0,0,14,0,0,17,0,0,0,0,0,6,2,2022,2,Desa Tertinggal
+Blahbatuh,Bedulu,2470.0,0,10,2,1,0,6,0,0,4,11,1,2,0,2,8,6,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Gianyar,Lebih,3737.0,1,1,3,1,0,2,0,0,12,1,0,1,1,0,5,3,2022,2,Desa Tertinggal
+Gianyar,Tulikup,1616.0,1,1,6,0,0,2,0,0,12,1,1,1,0,0,6,3,2022,2,Desa Tertinggal
+Gianyar,Temesi,1303.0,0,0,1,0,0,1,1,0,5,3,0,0,0,0,5,2,2022,2,Desa Tertinggal
+Gianyar,Sidan,2560.0,0,0,4,0,0,1,0,0,1,7,0,0,2,0,2,2,2022,2,Desa Tertinggal
+Gianyar,Samplangan,2122.0,0,6,2,0,0,4,0,0,5,2,0,1,0,0,6,1,2022,2,Desa Tertinggal
+Gianyar,Serongga,3029.0,1,0,3,0,0,1,0,0,0,5,0,0,1,0,2,0,2022,2,Desa Tertinggal
+Gianyar,Abianbase,1556.0,1,0,3,0,0,2,0,0,1,4,1,0,2,0,3,5,2022,2,Desa Tertinggal
+Gianyar,Gianyar,7015.0,1,5,10,10,6,5,0,0,33,10,6,1,1,1,18,7,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Gianyar,Beng,2048.0,0,0,1,0,0,1,0,0,1,8,1,0,2,0,9,1,2022,2,Desa Tertinggal
+Gianyar,Bitera,3096.0,1,0,2,1,0,4,1,0,4,7,0,1,0,0,1,4,2022,2,Desa Tertinggal
+Gianyar,Bakbakan,1245.0,0,3,2,0,0,2,0,0,8,6,0,0,0,0,1,0,2022,2,Desa Tertinggal
+Gianyar,Siangan,1807.0,0,7,3,0,0,5,0,0,5,6,0,0,1,0,2,0,2022,2,Desa Tertinggal
+Gianyar,Suwat,858.0,0,0,0,0,0,2,0,0,2,4,0,0,1,0,1,0,2022,2,Desa Tertinggal
+Gianyar,Petak,1263.0,1,2,1,0,0,5,0,0,2,2,0,0,0,0,0,1,2022,2,Desa Tertinggal
+Gianyar,Petak Kaja,1259.0,0,0,2,0,0,3,0,0,4,1,0,0,1,0,3,0,2022,2,Desa Tertinggal
+Gianyar,Sumita,1648.0,0,0,1,0,0,1,0,0,1,7,0,0,0,0,0,0,2022,2,Desa Tertinggal
+Gianyar,Tegal Tugu,3473.0,0,0,2,0,0,1,0,0,5,2,0,0,0,0,1,0,2022,2,Desa Tertinggal
+Payangan,Melinggih Kelod,960.0,4,8,2,1,0,4,0,0,1,8,0,0,0,0,2,2,2022,2,Desa Tertinggal
+Payangan,Melinggih,1533.0,0,2,3,4,0,6,1,0,1,3,5,1,1,2,5,1,2022,2,Desa Tertinggal
+Payangan,Kelusa,736.0,1,12,2,0,0,3,0,0,11,0,0,0,0,0,0,0,2022,2,Desa Tertinggal
+Payangan,Beresela,937.0,1,7,1,0,0,1,0,0,0,5,0,0,0,0,2,3,2022,2,Desa Tertinggal
+Payangan,Bukian,819.0,0,1,1,0,0,8,0,0,14,3,0,0,0,0,2,0,2022,2,Desa Tertinggal
+Payangan,Puhu,436.0,4,0,2,0,0,6,0,0,6,1,0,1,0,0,3,0,2022,2,Desa Tertinggal
+Payangan,Buahan,401.0,3,1,1,0,0,5,0,0,0,8,0,1,0,0,0,0,2022,2,Desa Tertinggal
+Payangan,Buahan Kaja,413.0,0,3,1,0,0,8,0,0,0,2,0,1,0,0,0,0,2022,2,Desa Tertinggal
+Payangan,Kerta,390.0,0,4,3,0,0,8,0,0,3,2,0,1,0,0,0,0,2022,2,Desa Tertinggal
+Sukawati,Batubulan,3367.0,0,6,12,4,1,14,0,0,5,37,4,7,0,2,29,40,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Sukawati,Batubulan Kangin,2810.0,0,0,3,0,0,2,0,0,2,10,0,2,0,0,0,0,2022,2,Desa Tertinggal
+Sukawati,Ketewel,1686.0,0,10,6,2,0,3,0,0,2,18,0,1,1,0,9,4,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Sukawati,Guwang,1441.0,0,1,2,0,0,1,0,1,1,10,1,2,0,0,4,3,2022,2,Desa Tertinggal
+Sukawati,Sukawati,1748.0,0,10,4,6,1,9,1,0,3,19,3,5,0,2,5,27,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Sukawati,Celuk,1485.0,0,3,3,0,0,4,0,0,2,6,0,2,0,0,2,0,2022,2,Desa Tertinggal
+Sukawati,Singapadu,1665.0,0,3,4,3,0,4,0,0,3,8,1,1,0,0,8,3,2022,2,Desa Tertinggal
+Sukawati,Singapadu Tengah,671.0,0,13,3,0,0,5,0,0,3,9,0,1,0,0,11,2,2022,2,Desa Tertinggal
+Sukawati,Singapadu Kaler,1897.0,0,5,4,1,0,3,0,0,4,8,0,1,0,0,9,7,2022,2,Desa Tertinggal
+Sukawati,Batuan,2170.0,0,14,2,0,0,4,0,0,3,24,2,1,0,0,2,3,2022,2,Desa Tertinggal
+Sukawati,Batuan Kaler,1701.0,0,2,1,1,0,1,0,0,7,4,0,0,0,0,5,5,2022,2,Desa Tertinggal
+Sukawati,Kemenuh,1370.0,2,92,3,0,0,7,0,0,5,15,3,1,0,0,5,9,2022,0,Desa Maju
+Tampaksiring,Pejeng Kawan,1464.0,0,29,1,0,0,1,0,0,0,7,0,0,0,0,0,0,2022,2,Desa Tertinggal
+Tampaksiring,Pejeng,2131.0,0,11,2,1,0,3,1,0,8,6,3,2,0,1,7,4,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Tampaksiring,Pejeng Kelod,1320.0,0,6,4,0,0,5,0,0,1,3,0,1,0,0,2,0,2022,2,Desa Tertinggal
+Tampaksiring,Pejeng Kangin,1437.0,1,8,4,0,0,5,0,0,0,8,0,0,0,0,3,0,2022,2,Desa Tertinggal
+Tampaksiring,Pejeng Kaja,1482.0,2,9,4,0,0,4,0,0,3,10,0,1,0,0,2,0,2022,2,Desa Tertinggal
+Tampaksiring,Sanding,1031.0,0,4,1,0,0,1,0,0,2,7,1,0,1,0,3,1,2022,2,Desa Tertinggal
+Tampaksiring,Tampaksiring,1314.0,2,3,4,4,0,7,0,0,0,13,5,1,0,1,13,6,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Tampaksiring,Manukaya,833.0,0,0,5,0,0,10,0,0,4,13,2,1,0,0,4,5,2022,2,Desa Tertinggal
+Tegallalang,Keliki,1052.16,10,71,1,0,0,2,0,0,12,10,0,0,0,0,0,8,2022,0,Desa Maju
+Tegallalang,Tegallalang,1946.41,4,12,6,2,0,8,0,0,7,11,7,2,1,1,2,12,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Tegallalang,Kenderan,852.77,3,30,3,0,0,3,0,0,10,4,0,0,0,0,15,2,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Tegallalang,Kedisan,1953.42,0,13,2,0,0,5,0,0,9,7,0,0,0,0,1,6,2022,2,Desa Tertinggal
+Tegallalang,Pupuan,837.66,1,5,0,0,0,7,0,0,7,6,0,0,0,0,1,1,2022,2,Desa Tertinggal
+Tegallalang,Sebatu,625.66,3,16,4,0,0,9,0,0,19,9,3,1,0,0,4,5,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Tegallalang,Taro,760.61,0,4,1,0,0,12,0,0,4,14,0,1,0,0,6,6,2022,2,Desa Tertinggal
+Ubud,Singakerta,1519.56,10,17,5,0,0,6,0,0,1,15,0,2,0,2,10,3,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru
+Ubud,Lodtunduh,1250.72,5,9,3,0,0,4,0,0,5,11,0,0,0,1,4,4,2022,2,Desa Tertinggal
+Ubud,Mas,2700.0,15,99,5,1,0,6,0,0,7,15,1,2,0,1,11,37,2022,0,Desa Maju
+Ubud,Peliatan,1736.31,4,99,9,2,4,5,0,0,6,12,2,1,0,1,17,20,2022,0,Desa Maju
+Ubud,Petulu,2248.5,6,99,1,1,4,4,0,0,3,7,1,0,0,0,6,14,2022,0,Desa Maju
+Ubud,Ubud,1634.84,29,99,8,2,2,6,1,0,5,14,21,1,0,0,33,99,2022,0,Desa Maju
+Ubud,Sayan,1397.23,11,99,5,1,0,2,0,0,2,12,1,2,0,2,8,20,2022,0,Desa Maju
+Ubud,Kedewatan,1576.09,12,33,3,1,0,6,0,0,7,7,5,0,1,1,8,22,2022,1,Desa Potensial Pusat Pertumbuhan Ekonomi Baru

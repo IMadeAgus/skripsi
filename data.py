@@ -136,7 +136,7 @@ def migrate_data():
         cursor.execute(
             """INSERT INTO HASIL_CLUSTERING (id_desa, tahun, label_numerik, kategori_deskriptif)
                VALUES (?, ?, ?, ?)""",
-            (desa_id, row["Tahun"], row["Cluster"], row["Kategori"]),
+            (desa_id, row["Tahun"], row["Cluster"], row["Label"]),
         )
 
     conn.commit()

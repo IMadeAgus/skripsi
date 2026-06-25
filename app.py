@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 import plotly.express as px
+import psutil, os
 
 # Konfigurasi Halaman - layout="wide" agar lega di desktop, tapi tetap adaptif di HP
 st.set_page_config(
@@ -76,6 +77,9 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption("Dashboard Potensi Desa © 2026")
+    # process = psutil.Process(os.getpid())
+    # mem_mb = process.memory_info().rss / (1024 * 1024)
+    # st.caption(f"🧠 Memori saat ini: {mem_mb:.1f} MB")
 
 
 # Load data berdasarkan filter
@@ -177,36 +181,31 @@ st.markdown("---")
 
 # --- BAGIAN CETAK LAPORAN ---
 st.subheader("🖨️ Unduh Laporan")
-st.write("Unduh data hasil filter atau laporan analisis lengkap di bawah ini.")
+st.write("Unduh laporan analisis lengkap di bawah ini.")
 
 # Tombol download diubah menjadi kolom agar rapi di desktop dan bertumpuk di HP
-col_btn1, col_btn2 = st.columns(2)
 
-with col_btn1:
-    if not df_final.empty:
-        csv = df_final.to_csv(index=False).encode("utf-8")
-        st.download_button(
-            label="Download Data Filter (CSV)",
-            data=csv,
-            file_name=f"Laporan_Potensi_Desa_{selected_kec}_{selected_tahun}.csv",
-            mime="text/csv",
-            use_container_width=True,
-        )
-    else:
-        st.warning("Tidak ada data filter untuk diunduh.")
+pdf_path = "data/laporan.pdf"
+try:
+    with open(pdf_path, "rb") as f:
+        pdf_data = f.read()
 
-with col_btn2:
-    pdf_path = "data/laporan.pdf"
-    try:
-        with open(pdf_path, "rb") as f:
-            pdf_data = f.read()
+    st.download_button(
+        label="Download Laporan Analisis (PDF)",
+        data=pdf_data,
+        file_name="laporan_analisis_potensi_desa.pdf",
+        mime="application/pdf",
+        use_container_width=True,
+    )
+except FileNotFoundError:
+    st.error("File laporan.pdf tidak ditemukan di folder data.")
 
-        st.download_button(
-            label="Download Laporan Analisis (PDF)",
-            data=pdf_data,
-            file_name="laporan_analisis_potensi_desa.pdf",
-            mime="application/pdf",
-            use_container_width=True,
-        )
-    except FileNotFoundError:
-        st.error("File laporan.pdf tidak ditemukan di folder data.")
+
+import time
+
+start = time.time()
+df_final = load_data(selected_tahun, selected_kec, selected_kat)
+elapsed = time.time() - start
+
+# Tampilkan sementara untuk testing, bisa dihapus setelah selesai
+st.caption(f"⏱️ Data dimuat dalam {elapsed:.3f} detik")
